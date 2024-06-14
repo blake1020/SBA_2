@@ -94,7 +94,7 @@ function getLearnerData(CourseInfo,assignmentGroup,learnerSubmission) {
       }
     ]
   };
-  
+  console.log(AssignmentGroup.name);
   // The provided learner submission data.
   const LearnerSubmissions = [
     {
