@@ -95,6 +95,7 @@ function getLearnerData(CourseInfo,assignmentGroup,learnerSubmission) {
     ]
   };
   console.log(AssignmentGroup.name);
+
   // The provided learner submission data.
   const LearnerSubmissions = [
     {
@@ -138,5 +139,7 @@ function getLearnerData(CourseInfo,assignmentGroup,learnerSubmission) {
       }
     }
   ];
-const results = getLearnerData(CourseInfo, AssignmentGroup, LearnerSubmissions);
+  //console log learner_id and Score
+  console.log("ID: "+LearnerSubmissions[3].learner_id+" Score " + LearnerSubmissions[3].submission.score);
+  const results = getLearnerData(CourseInfo, AssignmentGroup, LearnerSubmissions);
 console.log(results);
