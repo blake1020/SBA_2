@@ -139,6 +139,9 @@ function getLearnerData(CourseInfo,assignmentGroup,learnerSubmission) {
       }
     }
   ];
+  for (let i = 0; i < LearnerSubmissions.length; i++){
+    console.log(LearnerSubmissions[i])
+  }
   //console log learner_id and Score
   console.log("ID: "+LearnerSubmissions[3].learner_id+" Score " + LearnerSubmissions[3].submission.score);
   const results = getLearnerData(CourseInfo, AssignmentGroup, LearnerSubmissions);
